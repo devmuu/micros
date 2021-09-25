@@ -37,7 +37,6 @@ fp-info-cache
 *.obj.dmp
 html/
 **/nbproject/*
-!**/nbproject/*.properties
 !**/nbproject/configurations.xml
 !**/nbproject/project.xml
 build/
