@@ -2,7 +2,7 @@
  * PIC16F877A Samples
  * Sample 01: C coding
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 // CONFIGURATION BITS
@@ -22,6 +22,7 @@
 
 #include <xc.h>
 #include "main.h"
+#include <stdint.h>
 
 // CONSTANTS
 
@@ -54,7 +55,7 @@ typedef union
 generic_byte var1;
 
 /* standard variables */
-bit flag1 = 0;              // 01 bit  - cannot be initialized with "1"
+uint8_t  flag1 = 0;              // 01 bit  - cannot be initialized with "1"
 unsigned char letra = 'a';  // 08 bits - from 0 to 255 (ASCII coding)
 signed char num1 = 8;       // 08 bits - from -128 to 127
 unsigned int acc1 = 300;    // 16 bits - from 0 to 65.535
