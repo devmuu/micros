@@ -2,7 +2,7 @@
  * PIC16F877A Samples
  * Sample 02: IO ports
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 #ifndef GLOBALS_H
