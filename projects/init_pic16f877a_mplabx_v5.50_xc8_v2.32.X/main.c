@@ -2,7 +2,7 @@
  * PIC16F877A Samples
  * Sample 00: initial code
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2020/09/25
  */
 
 #pragma config FOSC = HS        // Oscillator Selection bits (HS oscillator)
@@ -17,7 +17,7 @@
 #include <xc.h>
 #include "main.h"
 
-void main(void) 
+void main(void)
 {
     return;
 }
