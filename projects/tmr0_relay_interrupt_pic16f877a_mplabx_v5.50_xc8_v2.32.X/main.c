@@ -1,8 +1,8 @@
 /*
  * PIC16F877A Samples
- * Sample 05: Timer0 and Relay (without interrupt)
+ * Sample 05: Timer0 and Rele
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 // CONFIGURATION BITS
@@ -47,6 +47,14 @@ void __interrupt() myIsr(void)
         INTCONbits.INTF = 0;
         led1 = !led1;
     }
+    
+    // Timer0
+    if(INTCONbits.TMR0IE && INTCONbits.TMR0IF)
+    {
+         TMR0 = 256 - rec_tmr0;
+         count0++;
+         INTCONbits.TMR0IF = 0;
+    }
 }
 
 /* Set all Needed registers */
@@ -67,7 +75,7 @@ void init(void)
     
 // INT EXT & TMR0
     OPTION_REG = 0b10000001;
- /*	   			   ||||||||
+/*	   			   ||||||||
 	   			   |||||||ps0 -> preescaler 1:4
 	   			   ||||||ps1 -^
 	   			   |||||ps2 -^
@@ -77,7 +85,7 @@ void init(void)
 	  			   |INTEDG   (int ext / =0 falling edge)
 	   			   !PORTB    Pull-up enable (=1 disabled)
 */
-    INTCON = 0b00010000;
+    INTCON = 0b00110000;
 /*	   		   ||||||||
 	   		   |||||||RBIF
 	   		   ||||||INTF
@@ -105,17 +113,12 @@ void main(void)
     // Infinity loop
     while(1)
     {
-        
-        while(!INTCONbits.TMR0IF);
-        TMR0 = 256 - rec_tmr0;
-        count0++;
-        INTCONbits.TMR0IF = 0;
         if(count0 == 5000)
         {
             rele1 = !rele1;
             count0 = 0;
         }
     }
-    
+
     return;
 }

@@ -1,6 +1,6 @@
 /*
  * PIC16F877A Samples
- * Sample 05: Timer0 and Relay (with interrupt)
+ * Sample 05: Timer0 and Relay (without interrupt)
  * Author: David Nascimento Coelho
  * Last Update: 2021/09/25
  */
