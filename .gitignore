@@ -37,6 +37,7 @@ fp-info-cache
 *.obj.dmp
 html/
 **/nbproject/*
+nbproject/Makefile-*
 !**/nbproject/configurations.xml
 !**/nbproject/project.xml
 build/
@@ -46,7 +47,6 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 funclist
-nbproject/Makefile-*
 disassembly/
 *.map
 
