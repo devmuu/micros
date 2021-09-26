@@ -8,6 +8,7 @@
 // LIBRARIES INCLUDE
 
 #include <xc.h>
+#include <stdint.h>
 #include "globals.h"
 #include "usart.h"
 

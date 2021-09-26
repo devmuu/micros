@@ -2,7 +2,7 @@
  * PIC16F877A Samples
  * Sample 08: Serial Communication
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 #ifndef GLOBALS_H
@@ -34,5 +34,5 @@
 
 // VARIABLES
 
-bit flag_rx = 0;                // =1 if received byte in serial
+uint8_t flag_rx = 0;                // =1 if received byte in serial
 unsigned char letra;            // receive character from serial
