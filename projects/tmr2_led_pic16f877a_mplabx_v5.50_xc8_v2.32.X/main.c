@@ -2,7 +2,7 @@
  * PIC16F877A Samples
  * Sample 09: Timer 2
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 // LIBRARIES INCLUDE
