@@ -17,7 +17,7 @@
 
 short z;
 
-void interrupt I2C_Slave_Read()
+void I2C_Slave_Read()
 { 
     if(PIR1bits.SSPIF == 1)
     {
