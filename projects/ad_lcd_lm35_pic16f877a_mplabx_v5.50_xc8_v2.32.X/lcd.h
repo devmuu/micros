@@ -1,7 +1,7 @@
 /*
  * LCD Library
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 #ifndef LCD_H

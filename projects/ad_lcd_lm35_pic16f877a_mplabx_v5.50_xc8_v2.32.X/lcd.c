@@ -1,7 +1,7 @@
 /*
  * LCD Library
  * Author: David Nascimento Coelho
- * Last Update: 2018/05/11
+ * Last Update: 2021/09/25
  */
 
 // LIBRARIES INCLUDE
@@ -9,6 +9,7 @@
 #include "globals.h"
 #include "lcd.h"
 #include <xc.h>
+#include <stdint.h>
 
 // DEFINES
 
@@ -22,22 +23,22 @@ unsigned char data;
 #endif
 
 #ifndef LCD4
-bit var4;
+uint8_t var4;
 #define LCD4 var4
 #endif
 
 #ifndef LCD5
-bit var5;
+uint8_t var5;
 #define LCD5 var5
 #endif
 
 #ifndef LCD6
-bit var6;
+uint8_t var6;
 #define LCD6 var6
 #endif
 
 #ifndef LCD7
-bit var7;
+uint8_t var7;
 #define LCD7 var7
 #endif
 
